@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class ContaTerminal{
     //TODO: ..... 
-    public int numeroConta;
-    public String agencia;
-    public String nome;
-    public double saldo;
+    private int numeroConta;
+    private String agencia;
+    private String nome;
+    private double saldo;
 
     //Criei o método construtor para inicializar os atributos
     public ContaTerminal(){
