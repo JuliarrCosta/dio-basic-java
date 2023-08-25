@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ContaTerminal{
-    //TODO: Criei os atributos encapsulados 
+    //TODO: ..... 
     private int numeroConta;
     private String agencia;
     private String nome;
