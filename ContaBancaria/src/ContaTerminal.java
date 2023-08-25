@@ -1,7 +1,20 @@
+
+/**
+* <h1>Conta Terminal </h1>
+* A classe recebe como parâmetros do usuário dados necessários para criacão de uma conta bancária
+* <p>
+* <b>Note:</b> Leia atentamente a documentação desta classes
+* para desfrutar dos recursos oferecidos pelo autor
+*
+* @author  Julia Costa
+* @version 3.0
+* @since   25/08/2023
+*/
+
 import java.util.Scanner;
 
 public class ContaTerminal{
-    //TODO: ..... 
+
     private int numeroConta;
     private String agencia;
     private String nome;
@@ -28,7 +41,10 @@ public class ContaTerminal{
     
     }
 
-     //Criei um método para exibir a mensagem 
+      /**
+    * Este método é utilizado para mostrar a criacão da conta
+    * @return retorno vazio
+    */
      public void exibirMensagem(){
         System.out.println("Olá "+nome+ ", obrigada por criar uma conta conosco! Sua conta é "+numeroConta+ ", agencia " +agencia+ "o seu saldo de " +saldo+ " já está disponível para saque." ); 
      }
