@@ -11,6 +11,7 @@
 * @since   25/08/2023
 */
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminal{
@@ -21,20 +22,23 @@ public class ContaTerminal{
     private double saldo;
 
     //Criei o método construtor para inicializar os atributos
+    /**
+     * 
+     */
     public ContaTerminal(){
         
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
         System.out.println("--------- Criar conta -------------");
         
         System.out.println("Digite o número da conta: ");
         this.numeroConta = scanner.nextInt();
 
         System.out.println("Digite a agencia: ");
-        this.agencia = scanner.nextLine();
+        this.agencia = scanner.next();
         scanner.nextLine(); //Limpando o buffer do teclado
 
         System.out.println("Digite seu nome: ");
-        this.nome = scanner.nextLine();
+        this.nome = scanner.next();
 
         System.out.println("Digite o saldo: ");
         this.saldo = scanner.nextDouble();
