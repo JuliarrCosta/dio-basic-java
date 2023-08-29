@@ -34,11 +34,11 @@ public class ContaTerminal{
         this.numeroConta = scanner.nextInt();
 
         System.out.println("Digite a agencia: ");
-        this.agencia = scanner.next();
+        this.agencia = scanner.nextLine();
         scanner.nextLine(); //Limpando o buffer do teclado
 
         System.out.println("Digite seu nome: ");
-        this.nome = scanner.next();
+        this.nome = scanner.nextLine();
 
         System.out.println("Digite o saldo: ");
         this.saldo = scanner.nextDouble();
